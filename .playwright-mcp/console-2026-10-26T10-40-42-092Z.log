@@ -1,2 +1,0 @@
-[     181ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8899/assets/map.png:0
-[     308ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8899/favicon.ico:0
