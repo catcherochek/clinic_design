@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Дитяча клініка неврозів та психотерапії — Одеса</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --purple:#8746C0;
+  --purple-deep:#5E2E96;
+  --purple-ink:#4A2A72;
+  --teal:#8E8A94;
+  --teal-deep:#67636E;
+  --lilac:#F3ECFB;
+  --lilac-2:#EADCFA;
+  --ink:#4D4A4A;
+  --ink-soft:#6E6A72;
+  --cloud:#F7F5FA;
+  --white:#fff;
+  --line:#ECE6F2;
+  --shadow-sm:0 6px 18px rgba(94,46,150,.07);
+  --shadow:0 18px 44px rgba(94,46,150,.12);
+  --shadow-lg:0 28px 70px rgba(94,46,150,.18);
+  --r:22px;
+  --r-lg:30px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:'Raleway',system-ui,sans-serif;color:var(--ink);
+  background:var(--cloud);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;color:var(--purple-ink);line-height:1.15}
+.script{font-family:'Pacifico',cursive;color:var(--purple);font-weight:400}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;justify-content:center;
+  font-family:'Raleway';font-weight:700;font-size:16px;cursor:pointer;border:none;
+  padding:15px 28px;border-radius:999px;transition:transform .15s ease, box-shadow .2s ease;
+}
+.btn-primary{background:linear-gradient(135deg,#9a53d6,#7a34b8);color:#fff;box-shadow:0 12px 26px rgba(135,70,192,.34)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(135,70,192,.42)}
+.btn-ghost{background:#fff;color:var(--purple-deep);border:1.5px solid var(--lilac-2)}
+.btn-ghost:hover{border-color:var(--purple);color:var(--purple)}
+.btn-lg{padding:18px 36px;font-size:18px}
+.section{padding:88px 0}
+.center{text-align:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--teal-deep);font-weight:700;font-size:15px;margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--teal)}
+.h2{font-size:clamp(28px,4vw,42px);font-weight:400}
+.lead{font-size:19px;color:var(--ink-soft);max-width:680px;margin:16px auto 0}
+
+/* ---------- HEADER ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(247,245,250,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:22px;height:78px}
+.nav .btn{padding:12px 22px;font-size:15px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--purple-ink);font-size:17px;line-height:1.1}
+.brand img{width:44px;height:44px;object-fit:contain}
+.brand small{display:block;font-weight:600;font-size:12px;color:var(--teal-deep);letter-spacing:.3px}
+.menu{display:flex;gap:22px;margin-left:8px;font-weight:600;font-size:15px;color:var(--ink)}
+.menu a:hover{color:var(--purple)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:18px}
+.lang{display:flex;flex:none;border:1.5px solid var(--lilac-2);border-radius:999px;overflow:hidden;font-weight:700;font-size:13px}
+.lang span{padding:7px 11px;white-space:nowrap}
+.lang .on{background:var(--purple);color:#fff}
+.tel{font-weight:800;color:var(--purple-ink);font-size:17px;white-space:nowrap}
+.tel small{display:block;font-weight:600;font-size:11px;color:var(--ink-soft)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;overflow:hidden;padding:64px 0 76px;
+  background:
+   radial-gradient(900px 500px at 88% -5%, #efe3fb 0%, rgba(239,227,251,0) 60%),
+   radial-gradient(700px 500px at -5% 110%, #ededf2 0%, rgba(237,237,242,0) 55%),
+   var(--cloud);}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(32px,4.4vw,50px);font-weight:800;letter-spacing:-.5px}
+.hero h1 .script{font-size:1.02em}
+.hero p.sub{font-size:19px;color:var(--ink-soft);margin:20px 0 28px;max-width:560px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.micro{margin-top:16px;color:var(--ink-soft);font-size:14.5px;display:flex;align-items:center;gap:8px}
+.micro svg{flex:none}
+.trust{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}
+.trust div{display:flex;flex-direction:column}
+.trust b{font-family:'Raleway';font-weight:800;color:var(--purple);font-size:26px}
+.trust span{font-size:13.5px;color:var(--ink-soft);max-width:150px}
+.hero-art{position:relative}
+.hero-art .card-art{background:transparent;border-radius:var(--r-lg);padding:26px 26px 20px;position:relative}
+.hero-art img.illo{width:78%;margin:0 auto}
+.badge-float{position:absolute;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:12px 16px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px}
+.badge-float .dot{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;color:#fff}
+.bf1{top:26px;left:-18px}
+.bf2{bottom:30px;right:-16px}
+
+/* ---------- SYMPTOMS ---------- */
+.sym-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.sym{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px 24px 22px;
+  box-shadow:var(--shadow-sm);display:flex;flex-direction:column;transition:transform .18s, box-shadow .18s;scroll-margin-top:100px}
+.sym:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.badge{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;
+  padding:6px 13px;border-radius:999px;margin-bottom:16px}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.b-psy{background:#F2E9FB;color:#7a34b8}
+.b-psycholog{background:#ECEAF0;color:#67636E}
+.b-both{background:linear-gradient(90deg,#F2E9FB,#ECEAF0);color:#5E2E96}
+.sym h3{font-size:19px;font-weight:700;margin-bottom:10px;color:var(--purple-ink)}
+.sym p{font-size:15px;color:var(--ink-soft);margin:0 0 20px;flex:1}
+.sym .link{font-weight:700;color:var(--purple);font-size:15px;display:inline-flex;align-items:center;gap:8px}
+.sym .link svg{transition:transform .15s}
+.sym:hover .link svg{transform:translateX(4px)}
+
+/* ---------- APPROACH ---------- */
+.approach{background:linear-gradient(180deg,#fff, #faf7fd)}
+.appr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:46px}
+.appr{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 20px;text-align:center;box-shadow:var(--shadow-sm)}
+.appr .ic{width:60px;height:60px;border-radius:18px;margin:0 auto 18px;display:grid;place-items:center;
+  background:var(--lilac);color:var(--purple)}
+.appr:nth-child(even) .ic{background:#EDEBF1;color:var(--teal-deep)}
+.appr h3{font-size:17px;font-weight:700;margin-bottom:10px}
+.appr p{font-size:14px;color:var(--ink-soft);margin:0}
+
+/* ---------- PROCESS TABS ---------- */
+.tabs{display:inline-flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px;margin:30px auto 0;box-shadow:var(--shadow-sm)}
+.tab{border:none;background:none;font-family:'Raleway';font-weight:700;font-size:16px;color:var(--ink-soft);
+  padding:13px 26px;border-radius:999px;cursor:pointer}
+.tab.on{background:linear-gradient(135deg,#9a53d6,#7a34b8);color:#fff;box-shadow:0 8px 18px rgba(135,70,192,.3)}
+.tab.on.teal{background:linear-gradient(135deg,#A09CA8,#67636E);box-shadow:0 8px 18px rgba(142,138,148,.3)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px 26px;box-shadow:var(--shadow-sm);position:relative}
+.step .num{width:46px;height:46px;border-radius:14px;background:var(--purple);color:#fff;font-weight:800;font-size:20px;display:grid;place-items:center;margin-bottom:18px}
+.step h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.step p{font-size:15px;color:var(--ink-soft);margin:0}
+.infobox{display:flex;gap:16px;align-items:flex-start;margin-top:26px;background:#F2E9FB;border:1px solid #e3d2f6;
+  border-radius:var(--r);padding:22px 26px}
+.infobox .ic{flex:none;width:40px;height:40px;border-radius:12px;background:var(--purple);color:#fff;display:grid;place-items:center}
+.infobox b{color:var(--purple-ink)}
+.infobox p{margin:4px 0 0;font-size:15px;color:var(--ink-soft)}
+
+/* ---------- SPECIALISTS ---------- */
+.specialists{background:linear-gradient(180deg,#faf7fd,#fff)}
+.spec-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:46px}
+.spec{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.spec .ph{aspect-ratio:1/1;overflow:hidden;background:#eee;position:relative}
+.spec .ph img{width:100%;height:100%;object-fit:cover}
+.spec .tag{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.94);color:var(--purple-deep);
+  font-weight:700;font-size:13px;padding:7px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
+.spec .body{padding:22px 24px 26px}
+.spec h3{font-size:20px;font-weight:800;margin-bottom:4px}
+.spec .role{color:var(--teal-deep);font-weight:700;font-size:14.5px}
+.spec .exp{margin:12px 0 18px;font-size:14.5px;color:var(--ink-soft);display:flex;align-items:center;gap:8px}
+.spec .exp b{color:var(--purple-ink)}
+.spec-btns{display:flex;flex-direction:column;gap:10px}
+.spec-btns .btn{width:100%;font-size:15px;padding:13px 18px}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:860px;margin:46px auto 0}
+.qa{background:#fff;border:1px solid var(--line);border-radius:18px;margin-bottom:14px;box-shadow:var(--shadow-sm);overflow:hidden}
+.qa summary{list-style:none;cursor:pointer;padding:22px 26px;display:flex;align-items:center;gap:16px;font-weight:700;font-size:17px;color:var(--purple-ink)}
+.qa summary::-webkit-details-marker{display:none}
+.qa .plus{margin-left:auto;flex:none;width:30px;height:30px;border-radius:50%;background:var(--lilac);color:var(--purple);display:grid;place-items:center;font-size:20px;transition:transform .2s}
+.qa[open] .plus{transform:rotate(45deg);background:var(--purple);color:#fff}
+.qa .a{padding:0 26px 24px 66px;color:var(--ink-soft);font-size:15.5px}
+.qa .qmark{flex:none;width:34px;height:34px;border-radius:10px;background:#ECEAF0;color:var(--teal-deep);display:grid;place-items:center;font-weight:800}
+
+/* ---------- FINAL CTA ---------- */
+.convert{background:linear-gradient(135deg,#7a34b8 0%, #5E2E96 60%, #4A2472 100%);color:#fff;position:relative;overflow:hidden}
+.convert::after{content:"";position:absolute;right:-80px;top:-80px;width:360px;height:360px;border-radius:50%;background:rgba(255,255,255,.06)}
+.convert::before{content:"";position:absolute;left:-60px;bottom:-100px;width:300px;height:300px;border-radius:50%;background:rgba(142,138,148,.18)}
+.conv-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;position:relative;z-index:1}
+.convert h2{color:#fff;font-size:clamp(28px,3.6vw,40px);font-weight:400}
+.convert .sub{color:rgba(255,255,255,.86);font-size:18px;margin-top:16px}
+.convert ul{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.convert li{display:flex;gap:12px;align-items:center;font-weight:600;color:rgba(255,255,255,.95)}
+.convert li svg{flex:none}
+.form{background:#fff;border-radius:var(--r-lg);padding:34px;box-shadow:var(--shadow-lg)}
+.form label{display:block;font-weight:700;font-size:14px;color:var(--purple-ink);margin:0 0 7px}
+.form input,.form textarea{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;font-family:'Raleway';font-size:16px;margin-bottom:18px;background:var(--cloud)}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--purple);background:#fff}
+.form .btn{width:100%}
+.form .consent{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink-soft);margin:16px 0 0}
+.form .consent input{width:auto;margin:3px 0 0}
+
+/* ---------- FOOTER ---------- */
+footer{background:#2b1540;color:rgba(255,255,255,.72);padding:64px 0 28px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:34px}
+footer h4{color:#fff;font-size:16px;margin:0 0 18px;font-weight:700}
+.foot-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.foot-brand img{width:46px;height:46px}
+.foot-brand b{color:#fff;font-size:17px;display:block}
+footer a:hover{color:#fff}
+.foot-links{display:grid;gap:10px}
+.msgr{display:flex;gap:10px;margin-top:6px}
+.msgr a{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:.2s}
+.msgr a:hover{background:var(--purple)}
+.map{border-radius:16px;overflow:hidden;height:150px;border:1px solid rgba(255,255,255,.12);position:relative;
+  background:
+   linear-gradient(135deg,#4a2a72,#2b1540),
+   repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 42px),
+   repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 42px)}
+.map .pin{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:700;background:rgba(43,21,64,.35)}
+.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;font-size:13px;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+/* ---------- MOBILE FLOATING BAR ---------- */
+.floatbar{display:none}
+
+@media(max-width:960px){
+  .menu,.nav-right .tel small{display:none}
+  .nav{gap:14px}
+  .hero-grid,.conv-grid{grid-template-columns:1fr;gap:34px}
+  .sym-grid,.steps,.spec-grid{grid-template-columns:1fr 1fr}
+  .appr-grid{grid-template-columns:1fr 1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  body{font-size:16px}
+  .nav .btn,.lang{display:none}
+  .section{padding:60px 0}
+  .sym-grid,.steps,.spec-grid,.appr-grid,.foot-grid{grid-template-columns:1fr}
+  .floatbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;
+    border-top:1px solid var(--line);padding:10px 14px;gap:10px;box-shadow:0 -8px 24px rgba(94,46,150,.12)}
+  .floatbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:13px;border-radius:14px;font-weight:700;font-size:14px}
+  .fb-call{background:var(--purple);color:#fff}
+  .fb-viber{background:#ECEAF0;color:#67636E}
+  .fb-tg{background:#F2E9FB;color:#7a34b8}
+  body{padding-bottom:72px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">
+      <img src="assets/logo.webp" alt="Дитяча клініка неврозів та психотерапії">
+    </a>
+    <nav class="menu">
+      <a href="#symptoms">Послуги</a>
+      <a href="#process">Як проходить прийом</a>
+      <a href="#specialists">Лікарі</a>
+      <a href="#faq">Питання</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><span class="on">UA</span><span>RU</span></div>
+      <a class="tel" href="tel:0689439102">068 943 91 02<small>Щодня 9:00–19:00</small></a>
+      <button class="btn btn-primary">Замовити дзвінок</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Бережно до дитини, з підтримкою для всієї родини та індивідуальним підходом.</div>
+      <h1 class="script">Дитячий центр неврозів та психотерапії в Одесі.</h1>
+      <h2 class="script"></h1>
+      <p class="sub">Допомагаємо дітям і підліткам упоратися з тривогою, страхами та труднощами поведінки. </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary btn-lg">Записатися на консультацію</button>
+        <button class="btn btn-ghost btn-lg">Підібрати спеціаліста</button>
+      </div>
+      <div class="micro">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.9 6 6.6.6-5 4.3 1.5 6.5L12 16l-6 3.4 1.5-6.5-5-4.3 6.6-.6z" fill="#8746C0"/></svg>
+        Анонімно · Індивідуальний підбір спеціаліста · Без направлення
+      </div>
+      <div class="trust">
+        <div><b>18+</b><span>років практики клініки</span></div>
+        <div><b>11</b><span>напрямів допомоги дітям</span></div>
+        <div><b>д.м.н.</b><span>головний лікар — доктор медичних наук</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="card-art">
+        <img class="illo" src="assets/intro.webp" alt="Ілюстрація — бережна допомога дитині">
+      </div>
+      <div class="badge-float bf1">
+        <span class="dot" style="background:#8746C0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-9.3-8.7C.9 9.1 2.6 5.5 6 5.5c2 0 3.2 1.1 4 2.3.8-1.2 2-2.3 4-2.3 3.4 0 5.1 3.6 3.3 6.8C19 16.6 12 21 12 21z" fill="#fff"/></svg>
+        </span>
+        Бережний підхід
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SYMPTOMS ===== -->
+<section class="section" id="symptoms">
+  <div class="wrap center">
+    <div class="eyebrow" style="justify-content:center">З якими труднощами ми допомагаємо</div>
+    <h2 class="h2 script">З чим можна звернутися до нас</h2>
+    <p class="lead">Оберіть ситуацію, яка близька вашій дитині — ми підкажемо, які фахівці підключаються до її вирішення.</p>
+  </div>
+  <div class="wrap">
+    <div class="sym-grid">
+
+      <div class="sym" id="sdvh">
+        <span class="badge b-both">Психіатр + Психолог</span>
+        <h3>СДУГ та труднощі з увагою</h3>
+        <p>Дитині складно зосередитися, завершувати завдання, контролювати імпульсивні реакції або всидіти на місці? Допоможемо розібратися в причинах і визначити подальші кроки.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="strakhy">
+        <span class="badge b-both">Психолог + Психіатр за показаннями</span>
+        <h3>Дитячі страхи, фобії та тривожність</h3>
+        <p>Дитина часто хвилюється, боїться залишатися сама, уникає певних ситуацій або переживає сильний страх? Допоможемо зрозуміти причини та підібрати формат допомоги.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="agressiya">
+        <span class="badge b-both">Психолог + Психіатр за показаннями</span>
+        <h3>Агресивність та труднощі з поведінкою</h3>
+        <p>Спалахи гніву, імпульсивність, замкнутість або часті конфлікти можуть мати різні причини. Фахівці допоможуть розібратися та визначити потрібну підтримку.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="samootsinka">
+        <span class="badge b-psycholog">Психолог</span>
+        <h3>Невпевненість у собі та низька самооцінка</h3>
+        <p>Дитина боїться помилок, соромиться висловлюватися, сумнівається у власних силах або болісно сприймає критику? Психолог працюватиме з емоціями та впевненістю.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="shkola">
+        <span class="badge b-both">Психолог + Психіатр за показаннями</span>
+        <h3>Шкільні труднощі та неуспішність</h3>
+        <p>Дитині важко вчитися, організовувати завдання, зосереджуватися або адаптуватися до навантаження? З’ясуємо, що саме заважає навчанню та яка допомога доречна.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="spilkuvannya">
+        <span class="badge b-psycholog">Психолог</span>
+        <h3>Труднощі у спілкуванні з однолітками</h3>
+        <p>Дитині складно заводити друзів, домовлятися, відстоювати власні межі або будувати стосунки? Психолог допоможе розвивати навички спілкування та розуміти емоції.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="rhp">
+        <span class="badge b-both">Психіатр + Психолог</span>
+        <h3>Порушення харчової поведінки (РХП)</h3>
+        <p>Зміни харчових звичок, обмеження їжі, сильний страх набрати вагу або надмірна стурбованість зовнішністю. Психіатр оцінює стан, психолог працює з емоціями та самооцінкою.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="psikhosomatika">
+        <span class="badge b-psy">Психіатр</span>
+        <h3>Невротичні та психосоматичні прояви</h3>
+        <p>Тривале емоційне напруження може супроводжуватися різними скаргами та змінами самопочуття. Консультація допоможе оцінити стан та потребу в додаткових обстеженнях.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="pidlitky">
+        <span class="badge b-both">Психолог + Психіатр за показаннями</span>
+        <h3>Ризикована поведінка підлітків</h3>
+        <p>Якщо підліток демонструє ризиковану поведінку, вживає психоактивні речовини або має труднощі із самоконтролем — важливо вчасно оцінити ситуацію та потребу в допомозі.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="zatrymka-rozvytku">
+        <span class="badge b-psy">Психіатр</span>
+        <h3>Затримка психомовленнєвого розвитку (ЗПР / ЗРР)</h3>
+        <p>Якщо мовлення або інші навички дитини розвиваються повільніше, ніж очікується для її віку, важливо оцінити розвиток та визначити необхідні обстеження.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" id="inshi-rozlady">
+        <span class="badge b-psy">Психіатр</span>
+        <h3>Інші психічні розлади у дітей та підлітків</h3>
+        <p>Психічний стан дитини може змінюватися по-різному. Дитячий психіатр проведе детальну оцінку стану та допоможе визначити подальшу тактику.</p>
+        <a class="link">Записатися з цим запитом <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#8746C0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+      <div class="sym" style="background:linear-gradient(135deg,#8746C0,#5E2E96);border:none;color:#fff;justify-content:center;align-items:flex-start">
+        <h3 style="color:#fff;font-size:22px">Не впевнені, з чим саме звернутися?</h3>
+        <p style="color:rgba(255,255,255,.88)">Опишіть ситуацію — медичний адміністратор уважно вислухає та допоможе підібрати потрібного фахівця.</p>
+        <a class="link" style="color:#fff">Отримати допомогу з вибором <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== APPROACH ===== -->
+<section class="section approach" id="approach">
+  <div class="wrap center">
+    <div class="eyebrow" style="justify-content:center">Наш підхід</div>
+    <h2 class="h2 script">Поруч із дитиною та вашою родиною</h2>
+    <p class="lead">Ми знаємо, що звернення до фахівця викликає хвилювання. Для нас важливо підтримати родину на кожному етапі.</p>
+  </div>
+  <div class="wrap">
+    <div class="appr-grid">
+      <div class="appr">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-9.3-8.7C.9 9.1 2.6 5.5 6 5.5c2 0 3.2 1.1 4 2.3.8-1.2 2-2.3 4-2.3 3.4 0 5.1 3.6 3.3 6.8C19 16.6 12 21 12 21z" fill="currentColor"/></svg></div>
+        <h3>Бережне ставлення</h3>
+        <p>Враховуємо вік та емоційний стан, створюємо комфортні умови для поступового контакту.</p>
+      </div>
+      <div class="appr">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M16 11a3 3 0 100-6 3 3 0 000 6zM8 11a3 3 0 100-6 3 3 0 000 6zM3 20c0-2.8 2.2-5 5-5M21 20c0-2.8-2.2-5-5-5M9 20c0-2.2 1.3-3 3-3s3 .8 3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <h3>Співпраця з батьками</h3>
+        <p>Надаємо рекомендації, відповідаємо на запитання та допомагаємо краще розуміти потреби дитини.</p>
+      </div>
+      <div class="appr">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M7 8h10M7 12h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 5h16v11H9l-5 4V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Команда фахівців</h3>
+        <p>Психіатр і психолог працюють разом та узгоджують підходи — з дотриманням конфіденційності.</p>
+      </div>
+      <div class="appr">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.4 5 5.6.5-4.2 3.7 1.3 5.5L12 20l-5.1 2.7 1.3-5.5L4 13.5l5.6-.5L12 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+        <h3>Індивідуальний підхід</h3>
+        <p>Універсальних рішень не існує — визначаємо та коригуємо допомогу під конкретну ситуацію.</p>
+      </div>
+      <div class="appr">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 20c2-6 5-9 14-9M5 20c0-3 1-5 3-6M12 11c0-3 2-6 7-7-.5 4-2 6-5 6.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>М’які сучасні методи</h3>
+        <p>Творчі завдання, пісочна терапія та бережні методики, що відповідають віку дитини.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="section" id="process">
+  <div class="wrap center">
+    <div class="eyebrow" style="justify-content:center">Прозорість процесу</div>
+    <h2 class="h2 script">Як проходить консультація</h2>
+    <div class="tabs">
+      <button class="tab on">Консультація психіатра</button>
+      <button class="tab">Робота з психологом</button>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Знайомство та бесіда</h3>
+        <p>З малими дітьми лікар спілкується з батьками та з’ясовує історію розвитку. З підлітками можлива окрема бесіда.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Оцінка стану дитини</h3>
+        <p>Оцінюється емоційний стан, поведінка та особливості розвитку дитини.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Рекомендації та план</h3>
+        <p>Батьки отримують рекомендації, за наявності показань — схему лікування або направлення до суміжних фахівців.</p>
+      </div>
+    </div>
+    <div class="infobox">
+      <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8h.01M11 12h1v5h1" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/></svg></span>
+      <div>
+        <b>Важливо знати</b>
+        <p>За потреби готується письмовий висновок (повідомте про це при записі). Інструментальні обстеження (ЕЕГ, МРТ, КТ) у клініці не проводяться — лікар надає направлення за потреби.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SPECIALISTS ===== -->
+<section class="section specialists" id="specialists">
+  <div class="wrap center">
+    <div class="eyebrow" style="justify-content:center">Наші спеціалісти</div>
+    <h2 class="h2 script">Кваліфіковані дитячі лікарі</h2>
+    <p class="lead">Усі фахівці мають відповідну освіту та досвід. Ви можете обрати конкретного лікаря для запису.</p>
+  </div>
+  <div class="wrap">
+    <div class="spec-grid">
+      <div class="spec">
+        <div class="ph"><span class="tag">Психіатр · д.м.н.</span><img src="assets/director.webp" alt=""></div>
+        <div class="body">
+          <h3>Шевченко-Бітенський Костянтин Валерійович</h3>
+          <div class="role">Головний лікар, дитячий психіатр</div>
+          <div class="exp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#8746C0" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#8746C0" stroke-width="1.8" stroke-linecap="round"/></svg><b>Стаж 18 років</b> · доктор медичних наук</div>
+          <div class="spec-btns">
+            <button class="btn btn-primary">Записатися до лікаря</button>
+            <button class="btn btn-ghost">Дипломи та сертифікати</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec">
+        <div class="ph"><span class="tag">Психолог</span><img src="assets/psycholog.webp" alt=""></div>
+        <div class="body">
+          <h3>Романенко Лариса Вікторівна</h3>
+          <div class="role">Дитячий психолог</div>
+          <div class="exp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#8746C0" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#8746C0" stroke-width="1.8" stroke-linecap="round"/></svg><b>Стаж 12 років</b> · робота з емоціями та поведінкою</div>
+          <div class="spec-btns">
+            <button class="btn btn-primary">Записатися до лікаря</button>
+            <button class="btn btn-ghost">Дипломи та сертифікати</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="spec">
+        <div class="ph"><span class="tag">Психіатр</span><img src="assets/psychiatr.webp" alt=""></div>
+        <div class="body">
+          <h3>Волякова Юлія Севірівна</h3>
+          <div class="role">Дитячий психіатр</div>
+          <div class="exp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#8746C0" stroke-width="1.8"/><path d="M12 7v5l3 2" stroke="#8746C0" stroke-width="1.8" stroke-linecap="round"/></svg><b>Стаж 14 років</b> · діагностика та супровід</div>
+          <div class="spec-btns">
+            <button class="btn btn-primary">Записатися до лікаря</button>
+            <button class="btn btn-ghost">Дипломи та сертифікати</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="wrap center">
+    <div class="eyebrow" style="justify-content:center">Відповідаємо на хвилювання</div>
+    <h2 class="h2 script">Часті запитання батьків</h2>
+  </div>
+  <div class="wrap">
+    <div class="faq">
+      <details class="qa" open>
+        <summary><span class="qmark">?</span>Як підготувати дитину до першої консультації?<span class="plus">+</span></summary>
+        <div class="a">Спокійно поясніть дитині, що ви йдете поспілкуватися з людиною, яка допомагає дітям, коли їм складно. Не варто лякати лікарем чи уколами. Решту підкаже фахівець уже на зустрічі.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи потрібно приходити на консультацію разом із дитиною?<span class="plus">+</span></summary>
+        <div class="a">Так, присутність дитини зазвичай потрібна. У деяких випадках першу зустріч можна провести лише з батьками — уточніть це при записі, адміністратор підкаже оптимальний формат.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Що робити, якщо ми не знаємо, до якого фахівця записатися?<span class="plus">+</span></summary>
+        <div class="a">Це нормально. Опишіть ситуацію нашому медичному адміністратору — він уважно вислухає та допоможе підібрати потрібного спеціаліста. Обирати діагноз самостійно не потрібно.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи обов’язково дитячий психіатр призначає медикаменти?<span class="plus">+</span></summary>
+        <div class="a">Ні. Медикаменти призначаються лише за наявності показань. У багатьох випадках достатньо психологічної роботи та рекомендацій для родини.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи можна отримати письмовий висновок після консультації?<span class="plus">+</span></summary>
+        <div class="a">Так, за потреби готується письмовий висновок. Будь ласка, повідомте про це заздалегідь — при записі або на початку консультації.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи проводяться в клініці ЕЕГ, МРТ та КТ?<span class="plus">+</span></summary>
+        <div class="a">Інструментальні обстеження у клініці не проводяться. За потреби лікар надасть направлення на відповідне обстеження.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи спілкується психолог із батьками під час подальшої роботи?<span class="plus">+</span></summary>
+        <div class="a">Так. Психолог проводить окремі або спільні зустрічі з батьками для обговорення динаміки та надання рекомендацій для дому.</div>
+      </details>
+      <details class="qa">
+        <summary><span class="qmark">?</span>Чи є консультації конфіденційними?<span class="plus">+</span></summary>
+        <div class="a">Так. Ми дотримуємося конфіденційності. Інформація про звернення та стан дитини не розголошується третім особам.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONVERT ===== -->
+<section class="section convert" id="convert">
+  <div class="wrap conv-grid">
+    <div>
+      <h2>Вагаєтеся, до якого фахівця звернутися?</h2>
+      <p class="sub">Залиште заявку — наш медичний адміністратор уважно вислухає вас, відповість на запитання та допоможе підібрати потрібного спеціаліста.</p>
+      <ul>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#BCB8C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Анонімно та конфіденційно</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#BCB8C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Допоможемо підібрати фахівця під вашу ситуацію</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#BCB8C4" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Передзвонимо у зручний для вас час</li>
+      </ul>
+    </div>
+    <form class="form" onsubmit="return false">
+      <label>Ваше ім’я</label>
+      <input type="text" placeholder="Як до вас звертатися">
+      <label>Номер телефону</label>
+      <input type="tel" placeholder="+380 __ ___ __ __">
+      <label>Вік дитини / коротко про ситуацію <span style="color:var(--ink-soft);font-weight:500">(необов’язково)</span></label>
+      <textarea rows="2" placeholder="Напр.: доньці 9 років, часто тривожиться"></textarea>
+      <button class="btn btn-primary btn-lg">Отримати консультацію та записатися</button>
+      <label class="consent"><input type="checkbox" checked><span>Погоджуюся з політикою конфіденційності та обробкою персональних даних.</span></label>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contacts">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">
+        <img src="assets/logo-white.webp" alt="">
+        <div><b>Дитяча клініка неврозів</b><span>та психотерапії · Одеса</span></div>
+      </div>
+      <p>Допомагаємо дітям і підліткам та підтримуємо родину на кожному етапі. Бережно, професійно та конфіденційно.</p>
+      <div class="msgr">
+        <a href="#" title="Телефон" aria-label="Телефон"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L17 11l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+        <a href="#" title="Viber" aria-label="Viber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#fff" stroke-width="1.6"/><path d="M9.5 8.5c1 2.5 2.5 4 5 5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <a href="#" title="Telegram" aria-label="Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Навігація</h4>
+      <div class="foot-links">
+        <a href="#symptoms">Проблеми та симптоми</a>
+        <a href="#process">Як проходить прийом</a>
+        <a href="#approach">Наш підхід</a>
+        <a href="#specialists">Лікарі</a>
+        <a href="#faq">Часті запитання</a>
+      </div>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <div class="foot-links">
+        <a href="tel:0689439102">068 943 91 02</a>
+        <a href="tel:0487880525">048 788 05 25</a>
+        <a href="mailto:neurosisclinic@gmail.com">neurosisclinic@gmail.com</a>
+        <span>Україна, м. Одеса,<br>вул. Пастера, 22</span>
+        <span>Щодня: 9:00 – 19:00</span>
+      </div>
+    </div>
+    <div>
+      <h4>Ми на карті</h4>
+      <div class="map"><div class="pin"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="#fff" stroke-width="1.8"/></svg>&nbsp;вул. Пастера, 22</div></div>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>© 2026 Дитяча клініка неврозів та психотерапії. Усі права захищені.</span>
+    <span>Медична ліцензія МОЗ України № ______ від __.__.____. Самолікування може бути шкідливим для здоров’я.</span>
+  </div>
+</footer>
+
+<!-- ===== MOBILE FLOATING BAR ===== -->
+<div class="floatbar">
+  <a class="fb-call" href="tel:0689439102"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L17 11l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>Дзвінок</a>
+  <a class="fb-viber" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#67636E" stroke-width="1.6"/></svg>Viber</a>
+  <a class="fb-tg" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#7a34b8" stroke-width="1.6" stroke-linejoin="round"/></svg>Telegram</a>
+</div>
+
+</body>
+</html>
