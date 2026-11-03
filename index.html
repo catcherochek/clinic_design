@@ -199,12 +199,10 @@ footer a:hover{color:#fff}
 .msgr{display:flex;gap:10px;margin-top:6px}
 .msgr a{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:.2s}
 .msgr a:hover{background:var(--purple)}
-.map{border-radius:16px;overflow:hidden;height:150px;border:1px solid rgba(255,255,255,.12);position:relative;
-  background:
-   linear-gradient(135deg,#4a2a72,#2b1540),
-   repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 42px),
-   repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 42px)}
-.map .pin{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:700;background:rgba(43,21,64,.35)}
+.map{border-radius:16px;overflow:hidden;height:150px;border:1px solid rgba(255,255,255,.12);position:relative;display:block}
+.map img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);color:#E4322B;filter:drop-shadow(0 1px 2px rgba(0,0,0,.45))}
+.map .addr{position:absolute;left:10px;bottom:10px;background:rgba(43,21,64,.85);color:#fff;font-weight:700;font-size:12px;padding:5px 10px;border-radius:8px}
 .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:24px;font-size:13px;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
 /* ---------- MOBILE FLOATING BAR ---------- */
@@ -604,9 +602,9 @@ footer a:hover{color:#fff}
       </div>
       <p>Допомагаємо дітям і підліткам та підтримуємо родину на кожному етапі. Бережно, професійно та конфіденційно.</p>
       <div class="msgr">
-        <a href="#" title="Телефон" aria-label="Телефон"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L17 11l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
-        <a href="#" title="Viber" aria-label="Viber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#fff" stroke-width="1.6"/><path d="M9.5 8.5c1 2.5 2.5 4 5 5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-        <a href="#" title="Telegram" aria-label="Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+        <a href="tel:+380689439102" title="Телефон" aria-label="Телефон"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L17 11l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+        <a href="viber://chat?number=%2B380689439102" title="Viber" aria-label="Viber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#fff" stroke-width="1.6"/><path d="M9.5 8.5c1 2.5 2.5 4 5 5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></a>
+        <a href="https://t.me/+380689439102" target="_blank" rel="noopener" title="Telegram" aria-label="Telegram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
       </div>
     </div>
     <div>
@@ -630,7 +628,11 @@ footer a:hover{color:#fff}
     </div>
     <div>
       <h4>Ми на карті</h4>
-      <div class="map"><div class="pin"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.3 7-12a7 7 0 10-14 0c0 5.7 7 12 7 12z" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="#fff" stroke-width="1.8"/></svg>&nbsp;вул. Пастера, 22</div></div>
+      <a class="map" href="https://www.google.com/maps/place/%D0%9A%D0%BB%D1%96%D0%BD%D1%96%D0%BA%D0%B0+%D0%9D%D0%B5%D0%B2%D1%80%D0%BE%D0%B7%D1%96%D0%B2/@46.4920274,30.7230048,16z/data=!4m6!3m5!1s0x40c631c1ac52bc43:0x49dfe57c8ba546ab!8m2!3d46.4913996!4d30.7246678!16s%2Fg%2F11dd_sktkt" target="_blank" rel="noopener" aria-label="Відкрити на Google Картах — вул. Пастера, 22">
+        <img src="assets/map.png" alt="Клініка неврозів на карті, вул. Пастера, 22, Одеса" loading="lazy">
+        <span class="pin"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg></span>
+        <span class="addr">вул. Пастера, 22</span>
+      </a>
     </div>
   </div>
   <div class="wrap legal">
@@ -642,8 +644,8 @@ footer a:hover{color:#fff}
 <!-- ===== MOBILE FLOATING BAR ===== -->
 <div class="floatbar">
   <a class="fb-call" href="tel:0689439102"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 005 5L17 11l5 2v3a2 2 0 01-2 2A16 16 0 014 5a2 2 0 012-2z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/></svg>Дзвінок</a>
-  <a class="fb-viber" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#67636E" stroke-width="1.6"/></svg>Viber</a>
-  <a class="fb-tg" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#7a34b8" stroke-width="1.6" stroke-linejoin="round"/></svg>Telegram</a>
+  <a class="fb-viber" href="viber://chat?number=%2B380689439102"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3c4.5 0 7.5 2.7 7.5 7 0 4-2.7 7-7 7-.8 0-1.5-.1-2-.2L7 19l.6-3C6 14.6 4.5 12.9 4.5 10 4.5 5.7 7.5 3 12 3z" stroke="#67636E" stroke-width="1.6"/></svg>Viber</a>
+  <a class="fb-tg" href="https://t.me/+380689439102" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 5L3 12l5 2 2 5 3-3 4 3 4-14z" stroke="#7a34b8" stroke-width="1.6" stroke-linejoin="round"/></svg>Telegram</a>
 </div>
 
 <script>
