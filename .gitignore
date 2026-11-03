@@ -3,3 +3,4 @@ design.zip
 ngrok.log
 *.log
 .DS_Store
+task/.~lock.*
