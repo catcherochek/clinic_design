@@ -1,5 +1,6 @@
 .playwright-mcp/
 design.zip
+Archive.zip
 ngrok.log
 *.log
 .DS_Store
